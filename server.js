@@ -24,7 +24,7 @@ const db = mysql.createConnection({
   port: 16006,
   ssl: {
     mode: "REQUIRED",
-    ca: fs.readFileSync("./ca.pem").toString(),
+    ca: fs.readFileSync("ca.pem").toString(),
   },
 });
 
